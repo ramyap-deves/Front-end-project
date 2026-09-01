@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Order Successful</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<section class="success-section">
+
+    <div class="success-box">
+
+        <div class="success-icon">
+            ✅
+        </div>
+
+        <h1>Order Placed Successfully!</h1>
+
+        <p>
+            Thank you for ordering from Foodie.
+        </p>
+
+        <p>
+            Your delicious food is being prepared.
+        </p>
+
+        <h3>
+            Order ID:
+            <span id="order-id"></span>
+        </h3>
+
+        <a href="menu.html" class="btn">
+            Order More Food
+        </a>
+
+    </div>
+
+</section>
+
+
+<script>
+
+    const orderId =
+        localStorage.getItem("orderId");
+
+    document.getElementById("order-id")
+        .textContent = orderId || "FD1001";
+
+</script>
+
+</body>
+
+</html>

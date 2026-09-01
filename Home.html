@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie - Food Ordering</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+        <h2 class="logo">🍴 Foodie</h2>
+
+        <ul class="nav-links">
+            <li><a href="Home.html">Home 🏘</a></li>
+            <li><a href="menu.html">Menu 🍽</a></li>
+            <li><a href="cart.html">Cart 🛒 <span id="cart-count">0</span></a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Delicious Food,<br>Delivered To You</h1>
+
+        <p>
+            Order your favourite food from Foodie and enjoy
+            delicious meals at your doorstep.
+        </p>
+
+        <a href="menu.html" class="btn">Order Now</a>
+    </div>
+</section>
+
+<section class="categories">
+    <h2>What are you craving?</h2>
+
+    <div class="category-container">
+        <div class="category">🍕<span>Pizza</span></div>
+        <div class="category">🍔<span>Burger</span></div>
+        <div class="category">🍛<span>Biryani</span></div>
+        <div class="category">🍰<span>Dessert</span></div>
+        <div class="category">🥤<span>Drinks</span></div>
+    </div>
+</section>
+
+<section class="popular">
+    <h2>Popular Foods</h2>
+
+    <div class="food-container">
+
+        <div class="food-card">
+            <div class="food-image">🍕</div>
+            <h3>Cheese Pizza</h3>
+            <p>₹249</p>
+            <button onclick="addToCart('Cheese Pizza',249,'🍕')">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="food-card">
+            <div class="food-image">🍔</div>
+            <h3>Classic Burger</h3>
+            <p>₹149</p>
+            <button onclick="addToCart('Classic Burger',149,'🍔')">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="food-card">
+            <div class="food-image">🍛</div>
+            <h3>Chicken Biryani</h3>
+            <p>₹299</p>
+            <button onclick="addToCart('Chicken Biryani',299,'🍛')">
+                Add to Cart
+            </button>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Foodie. All Rights Reserved.</p>
+</footer>
+
+<script src="javascript.js"></script>
+
+</body>
+</html>
